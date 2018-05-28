@@ -1,1 +1,8 @@
 # Pyramid
+app:
+  build:
+    image: codeship/app
+    context: app
+    dockerfile: Dockerfile
+    args:
+      build_env: production
